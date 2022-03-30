@@ -1,0 +1,58 @@
+﻿@page
+@model first.Pages.BookList.IndexModel
+<br/>
+<div class="contiainer row p-0 m-0">
+    <div class="col-9">
+        <h2 class="text-info">Book List</h2>
+    </div>
+    <div class="col-3">
+        <a asp-page="Create" class="btn btn-info form-control text-white">Create a New Book</a>
+    </div>
+    <div class="col-12 border p-3 mt-3">
+        <form method="post">
+            @if(Model.Books.Count()>0)
+            {
+                <table class="table table-striped boarder">
+                    <tr class="table-secondary">
+                        <th>
+                            <label asp-for="Books.FirstOrDefault().name"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Books.FirstOrDefault().Author"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Books.FirstOrDefault().ISBN"></label>
+                        </th>
+                        <th>
+
+                        </th>
+
+                    </tr>
+                    @foreach(var item in Model.Books)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(m=>item.name)
+                                
+                           </td>
+                           <td>
+                               @Html.DisplayFor(m=>item.Author)
+                           </td>
+                             <td>
+                               @Html.DisplayFor(m=>item.ISBN)
+                           </td>
+                           <td>
+                               <button class="btn btn-danger btn-sm">Delete</button>
+                               <a class="btn btn-success btn-sm text-white">Edit</a>
+                           </td>
+                        </tr>
+                    }
+                </table>
+            }
+            else
+            {
+                <p>No book available.</p>
+            }
+        </form>
+    </div>
+</div>
