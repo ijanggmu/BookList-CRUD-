@@ -379,3 +379,4 @@ C:\Users\GGMU\Desktop\Data Engineer\dotnet\first\first\bin\Debug\netcoreapp3.1\r
 C:\Users\GGMU\Desktop\Data Engineer\dotnet\first\first\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\GGMU\Desktop\Data Engineer\dotnet\first\first\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Index.cshtml.g.cs
 C:\Users\GGMU\Desktop\Data Engineer\dotnet\first\first\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Create.cshtml.g.cs
+C:\Users\GGMU\Desktop\Data Engineer\dotnet\first\first\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Edit.cshtml.g.cs
